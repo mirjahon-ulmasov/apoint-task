@@ -23,13 +23,13 @@ export const LoginForm = () => {
             />
             <input
                 type="password"
-                placeholder="Password"
+                placeholder="Пароль"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
             />
             <button type="submit" disabled={loading}>
-                {loading ? "Logging in..." : "Login"}
+                {loading ? "Войти..." : "Войти"}
             </button>
         </form>
     );
