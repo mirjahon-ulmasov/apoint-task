@@ -1,14 +1,17 @@
-import { Fragment, useState } from 'react'
+import { BrowserRouter } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
+import { AuthProvider } from "./providers/AuthProvider";
+import { AppRouter } from "./routes/AppRoute";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <Fragment>
-      {count}
-      <button onClick={() => setCount(prev => prev + 1)}>+</button>
-    </Fragment>
-  )
+    return (
+        <BrowserRouter>
+            <AuthProvider>
+                <Toaster />
+                <AppRouter />
+            </AuthProvider>
+        </BrowserRouter>
+    );
 }
 
-export default App
+export default App;

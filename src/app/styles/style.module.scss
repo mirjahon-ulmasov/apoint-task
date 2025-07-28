@@ -1,0 +1,27 @@
+// imports
+@import '../../shared/ui/_typography';
+
+// variables
+$primary-color: #1976d2;
+$font-family: 'Manrope';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+body {
+    color: #222;
+    background-color: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}

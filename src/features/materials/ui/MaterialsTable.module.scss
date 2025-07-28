@@ -1,0 +1,54 @@
+.wrapper {
+    overflow-x: auto;
+}
+
+.table {
+    margin: 20px;
+    width: calc(100% - 40px);
+    font-size: 14px;
+    border-collapse: collapse;
+
+    th,
+    td {
+        border: 1px solid #ccc;
+        padding: 8px 12px;
+    }
+
+    th {
+        font-weight: 700;
+        text-align: center;
+        background-color: #f0f0f0;
+    }
+
+    td {
+        text-align: left;
+    }
+
+    tr:nth-child(even) td {
+        background-color: #fafafa;
+    }
+}
+
+.parentRow td {
+    background-color: #e6f7ff;
+    font-weight: bold;
+    text-align: left;
+}
+
+.categoryRow td {
+    background-color: #f9f0ff;
+    font-weight: 500;
+    text-align: left;
+}
+
+.totalRow td {
+    background-color: #fffbe6;
+    font-weight: bold;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
